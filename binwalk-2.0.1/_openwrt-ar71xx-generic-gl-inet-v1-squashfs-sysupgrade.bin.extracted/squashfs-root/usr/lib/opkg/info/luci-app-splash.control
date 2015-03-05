@@ -1,0 +1,9 @@
+Package: luci-app-splash
+Version: 0.12+git-15.006.29251-d876593-1
+Depends: libc, luci-lib-nixio, tc, kmod-sched, iptables-mod-nat-extra, iptables-mod-ipopt
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ar71xx
+Installed-Size: 42597
+Description:  Freifunk DHCP-Splash application

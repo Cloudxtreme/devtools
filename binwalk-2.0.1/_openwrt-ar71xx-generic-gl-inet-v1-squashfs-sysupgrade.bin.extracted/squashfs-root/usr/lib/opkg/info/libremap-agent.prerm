@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -z ${IPKG_INSTROOT} ] ; then
+	sed -ie '/libremap-agent/d' /etc/crontabs/root
+fi

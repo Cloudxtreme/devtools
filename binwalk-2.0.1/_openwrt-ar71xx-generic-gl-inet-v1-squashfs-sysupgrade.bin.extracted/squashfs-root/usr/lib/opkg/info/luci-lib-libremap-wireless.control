@@ -1,0 +1,8 @@
+Package: luci-lib-libremap-wireless
+Version: 0.1.6
+Depends: libc, luci-lib-libremap
+Source: feeds/libremap/libremap-agent
+Section: luci
+Architecture: ar71xx
+Installed-Size: 1114
+Description:  LibreMap wireless plugin

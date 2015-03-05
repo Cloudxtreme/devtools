@@ -1,0 +1,4 @@
+/etc/watchping/wan-fail.d/batman-gw
+/etc/uci-defaults/91_batman-adv-auto-gw-mode
+/etc/watchping/wan-ok.d/batman-gw
+/etc/hotplug.d/net/99-batman-gw

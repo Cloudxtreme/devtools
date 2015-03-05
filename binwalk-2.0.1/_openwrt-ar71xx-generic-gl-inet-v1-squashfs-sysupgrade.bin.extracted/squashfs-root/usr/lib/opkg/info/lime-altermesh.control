@@ -1,0 +1,9 @@
+Package: lime-altermesh
+Version: 2015-01-17-1421452807
+Depends: libc, lime-system, lime-proto-batadv, reghack, watchping, batman-adv-auto-gw-mode, dnsmasq-dhcpv6, dnsmasq-lease-share, luci-app-batman-adv, luci-app-openairview, libremap-agent, luci-lib-libremap-wireless, luci-lib-libremap-location, luci-lib-libremap-system
+Source: feeds/lime/packages/lime-altermesh
+Section: opt
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 104
+Description:  Metapackage depending on all the required to run an altermesh-style node

@@ -1,0 +1,142 @@
+spectral-scan-webgui
+   Realtime spectral scanner for ath9k (web-gui)
+    +fft-eval +uhttpd +luci-lib-jquery-1-4
+
+
+altermap-agent
+   Send system information to an AlterMap server
+    +luci-lib-core +luci-lib-httpclient +luci-lib-json +luci-lib-nixio +libuci-lua
+
+
+reghack
+   Regulatory domain unlocker
+lime-proto-eigennet
+   LiMe eigennet legacy compatibility proto support
+   +lua +libuci-lua +lime-system +lime-proto-batadv
+
+
+sprunge
+   sprunge.us pastebin
+lime-full
+   libre-mesh metapackage
+   +lime-system +lime-proto-bmx6 +lime-proto-batadv +lime-proto-anygw +lime-proto-wan\
+
+
+lime-system
+   libre-mesh system files
+   +lua +libuci-lua +luci-base +luci-lib-nixio
+
+
+luci-app-openairview
+   LuCI - Lua Configuration Interface
+   Visualize the spectrum and wifi neighbours
+    +libc +fft-eval +luci-lib-jquery-1-4 +luci-lib-json
+
+
+lime-proto-batadv
+   LiMe batman-adv proto support
+   +lime-system +lua +libuci-lua +kmod-batman-adv
+
+
+lime-map-agent
+   LiMe LibreMap agent
+   +libremap-agent +luci-lib-libremap-location +luci-lib-libremap-system +luci-lib-libremap-wireless
+
+
+luci-lib-jquery-1-4
+   LuCI - Lua Configuration Interface
+   jQuery library
+lime-debug
+   libre-mesh debug utils
+   +batctl +busybox +iwinfo +iw +mtr +ip +iputils-ping6 +sprunge \
+
+
+lime-proto-bmx6
+   LiMe Bmx6 proto support
+   +bmx6 +bmx6-json +bmx6-sms +bmx6-table +bmx6-uci-config +iptables +lime-system +lua +libuci-lua
+
+
+vale
+   $(PKG_NAME)
+dhcpdiscover
+   $(PKG_NAME)
+luci-mod-lime-basic
+   Web interface for Libre-Mesh nodes
+    +uhttpd +luci-theme-bootstrap +libiwinfo-lua +luci-mod-admin-core
+
+
+   Web interface for Libre-Mesh nodes (SSL support)
+    +$(PKG_NAME) +libustream-cyassl +px5g
+
+
+luci-app-batman-adv
+   LuCI - Lua Configuration Interface
+   B.A.T.M.A.N.-Adv status module
+    +libc +kmod-batman-adv +luci-lib-jquery-1-4
+
+
+fft-eval
+   Evaluates FFT samples from ath9k driver
+    +libc
+
+
+safe-reboot
+   $(PKG_NAME) falls back to a last-known-good config after an ill-fated reboot.
+lime-hwd-ground-routing
+   Manage 802.1q VLANs for ground routing
+   +lime-system +lua +libuci-lua
+
+
+lime-altermesh
+   AlterMesh metapackage using LiMe codebase
+   +lime-system +lime-proto-batadv +reghack \
+
+
+luci-app-lime-location
+   LuCI - Lua Configuration Interface
+   luci app to handle LibreMap location
+    +libc +libremap-agent
+
+
+watchping
+   Ping a host and run customizable actions (hooks) on timeout/recovery.
+lime-hwd-openwrt-wan
+   Respect openwrt wan interface as default
+   +lime-system +lua +libuci-lua +lime-proto-wan
+
+
+lime-webui
+   libre-mesh web user interface based on LUCI
+    +luci-mod-admin-full +luci-app-bmx6 \
+
+
+lime-proto-wan
+   LiMe wan proto support
+   +lime-system +lua +libuci-lua
+
+
+lime-proto-qmp
+   LiMe qmp proto legacy compatibility support
+   +lime-system +lime-proto-bmx6 +lua +libuci-lua
+
+
+lime-hwd-usbradio
+   LiMe hardware detection usb radio support
+   +lime-system +lua +libuci-lua
+
+
+lime-proto-anygw
+   LiMe anygw proto support
+   +ebtables +lime-system +lua +libuci-lua +kmod-macvlan +dnsmasq-lease-share +dnsmasq-dhcpv6 @(!PACKAGE_dnsmasq)
+
+
+dnsmasq-lease-share
+   dnsmasq lease sharing accross batman-adv mesh
+   +alfred +lua +libuci-lua
+
+
+batman-adv-auto-gw-mode
+   Changes batman-adv gw_mode to reflect internet availability
+    +kmod-batman-adv +watchping
+
+

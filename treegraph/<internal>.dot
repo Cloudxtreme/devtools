@@ -1,0 +1,359 @@
+digraph G {
+	node [label="\N"];
+	graph [label=Plugins,
+		rankdir=LR,
+		ranksep="1.5",
+		lp="515,12.5",
+		bb="0,0,1030,1885"];
+	subgraph cluster_neato_layout {
+		graph [label=neato_layout,
+			lp="",
+			bb=""];
+		subgraph neato_layout_layout {
+			graph [rank=same];
+		}
+	}
+	subgraph cluster_core {
+		graph [label=core,
+			lp="512,1123.5",
+			bb="232,33,792,1136"];
+		subgraph core_render {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			render_dot [label=dot, pos="515,653", width="0.75", height="0.5"];
+			render_fig [label=fig, pos="515,869", width="0.75", height="0.5"];
+			render_map [label=map, pos="515,707", width="0.88889", height="0.5"];
+			render_ps [label=ps, pos="515,1085", width="0.75", height="0.5"];
+			render_svg [label=svg, pos="515,815", width="0.77778", height="0.5"];
+			render_tk [label=tk, pos="515,599", width="0.75", height="0.5"];
+			render_vml [label=vml, pos="515,545", width="0.77778", height="0.5"];
+			render_xdot [label=xdot, pos="515,491", width="0.88889", height="0.5"];
+		}
+		subgraph core_device {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			core_device_canon [label=canon, pos="724,437", width="1.1111", height="0.5"];
+			core_device_cmap [label=cmap, pos="724,545", width="1.0278", height="0.5"];
+			core_device_cmapx [label=cmapx, pos="724,491", width="1.1667", height="0.5"];
+			core_device_cmapx_np [label=cmapx_np, pos="724,761", width="1.6667", height="0.5"];
+			"core_device_gv/dot" [label="gv/dot", pos="724,383", width="1.1389", height="0.5"];
+			core_device_eps [label=eps, pos="724,1031", width="0.77778", height="0.5"];
+			core_device_fig [label=fig, pos="724,923", width="0.75", height="0.5"];
+			core_device_imap [label=imap, pos="724,599", width="0.94444", height="0.5"];
+			core_device_imap_np [label=imap_np, pos="724,707", width="1.4167", height="0.5"];
+			core_device_ismap [label=ismap, pos="724,653", width="1.0833", height="0.5"];
+			core_device_plain [label=plain, pos="724,329", width="0.94444", height="0.5"];
+			"core_device_plain-ext" [label="plain-ext", pos="724,275", width="1.4722", height="0.5"];
+			core_device_ps [label=ps, pos="724,1085", width="0.75", height="0.5"];
+			core_device_ps2 [label=ps2, pos="724,977", width="0.77778", height="0.5"];
+			core_device_svg [label=svg, pos="724,869", width="0.77778", height="0.5"];
+			core_device_svgz [label=svgz, pos="724,815", width="0.91667", height="0.5"];
+			core_device_tk [label=tk, pos="724,221", width="0.75", height="0.5"];
+			core_device_vml [label=vml, pos="724,167", width="0.77778", height="0.5"];
+			core_device_vmlz [label=vmlz, pos="724,113", width="0.94444", height="0.5"];
+			core_device_xdot [label=xdot, pos="724,59", width="0.88889", height="0.5"];
+		}
+		subgraph core_loadimage {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			"core_loadimage_(lib)" [label="(lib)", pos="306,1085", width="0.83333", height="0.5"];
+			core_loadimage_eps [label=eps, pos="306,653", width="0.77778", height="0.5"];
+			core_loadimage_gif [label=gif, pos="306,761", width="0.75", height="0.5"];
+			"core_loadimage_jpeg/jpe/jpg" [label="jpeg/jpe/jpg", pos="306,815", width="1.8333", height="0.5"];
+			core_loadimage_png [label=png, pos="306,869", width="0.80556", height="0.5"];
+			core_loadimage_ps [label=ps, pos="306,707", width="0.75", height="0.5"];
+			core_loadimage_svg [label=svg, pos="306,599", width="0.77778", height="0.5"];
+		}
+		render_dot -> core_device_canon [pos="e,689.66,446.64 534.12,640.03 539.56,635.89 545.29,631.05 550,626 609.04,562.74 591.02,518.78 658,464 664.61,458.59 672.45,454.14\
+ 680.38,450.52"];
+		render_map -> core_device_cmap [pos="e,692.83,554.84 534.61,692.58 539.73,688.63 545.16,684.26 550,680 600.98,635.18 601.48,609.59 658,572 665.8,566.81 674.75,562.34\
+ 683.49,558.6"];
+		render_map -> core_device_cmapx [pos="e,688.64,501.03 535.58,692.91 540.57,689.02 545.71,684.6 550,680 609.04,616.74 591.02,572.78 658,518 664.34,512.82 671.8,508.51 \
+679.39,504.97"];
+		render_map -> core_device_cmapx_np [pos="e,678.52,749.25 544.5,714.62 576.66,722.93 628.84,736.41 668.67,746.71"];
+		render_dot -> "core_device_gv/dot" [pos="e,688.07,392.38 534.53,640.39 539.98,636.25 545.61,631.33 550,626 618.21,543.13 579.3,482.98 658,410 663.94,404.5 671.15,400.04 \
+678.59,396.46"];
+		render_ps -> core_device_eps [pos="e,697.71,1037.8 540.21,1078.5 577.02,1069 645.67,1051.2 687.85,1040.3"];
+		render_fig -> core_device_fig [pos="e,698.7,916.46 540.21,875.51 577.32,885.1 646.8,903.05 688.88,913.93"];
+		render_map -> core_device_imap [pos="e,695.71,609.66 536.82,693.48 564.47,676.63 613.85,647.43 658,626 667.01,621.63 676.92,617.32 686.25,613.48"];
+		render_map -> core_device_imap_np [pos="e,672.24,707 547.2,707 577.66,707 624.18,707 661.87,707"];
+		render_map -> core_device_ismap [pos="e,689.79,661.84 544.5,699.38 579.77,690.27 639.13,674.93 679.86,664.4"];
+		render_dot -> core_device_plain [pos="e,692.1,336.35 534.81,640.62 540.27,636.48 545.84,631.51 550,626 627.92,522.89 566.97,447.75 658,356 664.86,349.09 673.74,343.87\
+ 682.74,339.97"];
+		render_dot -> "core_device_plain-ext" [pos="e,681.53,286.08 535.02,640.77 540.49,636.64 546,631.63 550,626 637.92,502.26 554.3,412.84 658,302 662.12,297.6 667.06,293.89 672.36\
+,290.78"];
+		render_ps -> core_device_ps [pos="e,696.67,1085 542.32,1085 579.17,1085 644.94,1085 686.42,1085"];
+		render_ps -> core_device_ps2 [pos="e,699.23,986.27 534.93,1072.6 562.17,1056 612.82,1025.9 658,1004 668.13,999.08 679.39,994.25 689.7,990.07"];
+		render_svg -> core_device_svg [pos="e,697.95,862.27 541.05,821.73 578.15,831.32 646.34,848.93 688.17,859.74"];
+		render_svg -> core_device_svgz [pos="e,690.4,815 543.19,815 578.42,815 639.1,815 680.35,815"];
+		render_tk -> core_device_tk [pos="e,697.82,226.19 535.02,586.77 540.49,582.64 546,577.63 550,572 637.92,448.26 554.3,358.84 658,248 666.03,239.42 677.18,233.49 688.03\
+,229.42"];
+		render_vml -> core_device_vml [pos="e,696.83,172.48 535.75,532.21 540.97,528.19 546.18,523.38 550,518 637.92,394.26 554.3,304.84 658,194 665.84,185.62 676.64,179.78\
+ 687.25,175.72"];
+		render_vml -> core_device_vmlz [pos="e,691.93,119.76 535.9,532.32 541.13,528.3 546.3,523.46 550,518 648.08,373.4 541.43,270.15 658,140 664.56,132.68 673.4,127.3 682.48\
+,123.36"];
+		render_xdot -> core_device_xdot [pos="e,693.59,65.596 516.25,472.97 521.49,410.78 546.93,202.64 658,86 665.11,78.536 674.57,73.072 684.11,69.095"];
+		"core_loadimage_(lib)" -> render_ps [pos="e,487.9,1085 336.39,1085 373.8,1085 437.33,1085 477.67,1085"];
+		core_loadimage_eps -> render_xdot [pos="e,495.39,505.42 331.62,645.2 344.35,640.67 359.63,634.23 372,626 428.52,588.41 429.02,562.82 480,518 482.27,516 484.67,513.98 487.1\
+,511.99"];
+		core_loadimage_eps -> render_dot [pos="e,487.92,653 334.19,653 371.29,653 436.62,653 477.76,653"];
+		core_loadimage_eps -> render_map [pos="e,485.59,699.4 332.05,659.73 368.14,669.05 433.65,685.98 475.7,696.85"];
+		core_loadimage_eps -> render_ps [pos="e,510.67,1066.7 332.76,658.46 346.11,662.42 361.58,669.06 372,680 426.19,736.91 488.08,974.62 508.26,1056.9"];
+		core_loadimage_gif -> render_xdot [pos="e,493.65,505.02 331.57,755.19 344.91,751.1 360.74,744.44 372,734 450.7,661.02 411.79,600.87 480,518 481.83,515.78 483.87,513.63 \
+486.03,511.58"];
+		core_loadimage_gif -> render_dot [pos="e,495.07,665.36 329.84,752.09 342.53,747.14 358.3,740.65 372,734 412.77,714.22 457.99,687.81 486.44,670.6"];
+		core_loadimage_gif -> render_map [pos="e,485.67,714.58 331.21,754.49 367.19,745.19 433.6,728.03 475.97,717.08"];
+		core_loadimage_gif -> render_fig [pos="e,495.07,856.64 329.84,769.91 342.53,774.86 358.3,781.35 372,788 412.77,807.78 457.99,834.19 486.44,851.4"];
+		core_loadimage_gif -> render_svg [pos="e,488.71,808.21 331.21,767.51 368.02,777.02 436.67,794.76 478.85,805.66"];
+		"core_loadimage_jpeg/jpe/jpg" -> render_xdot [pos="e,493.37,504.79 351.93,801.88 359.29,798.26 366.33,793.71 372,788 463.03,696.25 402.08,621.11 480,518 481.74,515.7 483.71,513.5 \
+485.82,511.41"];
+		"core_loadimage_jpeg/jpe/jpg" -> render_dot [pos="e,496.48,666.58 347.77,800.86 356.11,797.23 364.58,792.94 372,788 428.52,750.41 429.02,724.82 480,680 482.67,677.65 485.53,675.26\
+ 488.41,672.93"];
+		"core_loadimage_jpeg/jpe/jpg" -> render_map [pos="e,493.18,720.52 344.41,800.25 353.55,796.48 363.2,792.27 372,788 411.84,768.66 455.93,743 484.48,725.79"];
+		"core_loadimage_jpeg/jpe/jpg" -> render_fig [pos="e,489.79,862.49 353.95,827.39 392.28,837.29 445.15,850.95 479.69,859.88"];
+		"core_loadimage_jpeg/jpe/jpg" -> render_svg [pos="e,486.76,815 372.13,815 406.53,815 447.38,815 476.57,815"];
+		core_loadimage_png -> render_xdot [pos="e,493.16,504.64 333.83,863.32 346.97,859.35 361.94,852.76 372,842 475.7,731.16 392.08,641.74 480,518 481.67,515.65 483.6,513.42 \
+485.68,511.3"];
+		core_loadimage_png -> render_dot [pos="e,495.88,665.97 333,861.98 345.79,857.71 360.69,851.25 372,842 438.98,787.22 420.96,743.26 480,680 482.43,677.4 485.13,674.85 487.92\
+,672.42"];
+		core_loadimage_png -> render_map [pos="e,501.13,723.6 332.15,860.82 344.74,856.27 359.72,849.91 372,842 421.05,810.39 468.35,760.8 494.37,731.34"];
+		core_loadimage_png -> render_fig [pos="e,487.84,869 335.06,869 372.31,869 436.94,869 477.76,869"];
+		core_loadimage_png -> render_svg [pos="e,488.87,821.75 332.9,862.05 370.17,852.42 437.63,834.99 479.16,824.26"];
+		core_loadimage_ps -> render_xdot [pos="e,494.42,505.09 331.39,700.52 344.52,696.25 360.21,689.64 372,680 438.98,625.22 420.96,581.26 480,518 482.01,515.84 484.21,513.73\
+ 486.49,511.68"];
+		core_loadimage_ps -> render_dot [pos="e,489.7,659.54 331.21,700.49 368.32,690.9 437.8,672.95 479.88,662.07"];
+		core_loadimage_ps -> render_map [pos="e,482.87,707 333.32,707 368.82,707 431.16,707 472.77,707"];
+		core_loadimage_ps -> render_ps [pos="e,512.63,1067 331.89,712.47 345.33,716.46 361.15,723.14 372,734 465.81,827.95 500.58,991.84 511.1,1057.1"];
+		core_loadimage_svg -> render_svg [pos="e,506.1,797.66 332.12,606.09 344.99,610.44 360.22,616.94 372,626 431.63,671.87 479.03,748.63 501.25,788.75"];
+		core_loadimage_svg -> render_xdot [pos="e,491.09,503.36 327.97,587.65 364.78,568.62 439.1,530.22 482.15,507.98"];
+		core_loadimage_svg -> render_dot [pos="e,489.61,646.44 332.05,605.73 369.35,615.37 438.08,633.13 479.86,643.92"];
+		core_loadimage_svg -> render_map [pos="e,493.18,693.48 330.46,608.15 343.04,613.07 358.52,619.46 372,626 411.84,645.34 455.93,671 484.48,688.21"];
+	}
+	subgraph cluster_cairo {
+		graph [label=cairo,
+			lp="515,1864.5",
+			bb="269,1638,761,1877"];
+		subgraph cairo_render {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			render_cairo [label=cairo, pos="515,1664", width="0.94444", height="0.5"];
+		}
+		subgraph cairo_textlayout {
+			graph [rank=same,
+				lp="",
+				bb=""];
+		}
+		subgraph cairo_device {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			cairo_device_pdf [label=pdf, pos="724,1826", width="0.75", height="0.5"];
+			cairo_device_png [label=png, pos="724,1772", width="0.80556", height="0.5"];
+			cairo_device_ps [label=ps, pos="724,1718", width="0.75", height="0.5"];
+			cairo_device_svg [label=svg, pos="724,1664", width="0.77778", height="0.5"];
+		}
+		subgraph cairo_loadimage {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			cairo_loadimage_png [label=png, pos="306,1664", width="0.80556", height="0.5"];
+		}
+		render_cairo -> cairo_device_pdf [pos="e,699.43,1818.4 528.87,1680.6 552.77,1708.3 604.33,1764.4 658,1799 667.8,1805.3 679.32,1810.6 689.97,1814.8"];
+		render_cairo -> cairo_device_png [pos="e,698.91,1762.6 537.31,1677.8 565.05,1694.7 614.11,1723.7 658,1745 668.04,1749.9 679.2,1754.7 689.44,1758.8"];
+		render_cairo -> cairo_device_ps [pos="e,698.74,1711.5 546.29,1672.1 584.53,1682 649.04,1698.6 688.92,1708.9"];
+		render_cairo -> cairo_device_svg [pos="e,695.81,1664 549.51,1664 586.92,1664 646.48,1664 685.41,1664"];
+		cairo_loadimage_png -> render_cairo [pos="e,480.28,1664 335.06,1664 370.04,1664 429.16,1664 470.04,1664"];
+	}
+	subgraph cluster_xlib {
+		graph [label=xlib,
+			lp="724,1617.5",
+			bb="666,1553,782,1630"];
+		subgraph xlib_device {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			"xlib_device_x11/xlib" [label="x11/xlib", pos="724,1579", width="1.3611", height="0.5"];
+		}
+	}
+	subgraph cluster_gd {
+		graph [label=gd,
+			lp="515,1532.5",
+			bb="232,1144,798,1545"];
+		subgraph gd_render {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			render_gd [label=gd, pos="515,1332", width="0.75", height="0.5"];
+			render_vrml [label=vrml, pos="515,1170", width="0.88889", height="0.5"];
+		}
+		subgraph gd_textlayout {
+			graph [rank=same,
+				lp="",
+				bb=""];
+		}
+		subgraph gd_device {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			gd_device_gd [label=gd, pos="724,1332", width="0.75", height="0.5"];
+			gd_device_gd2 [label=gd2, pos="724,1278", width="0.80556", height="0.5"];
+			gd_device_gif [label=gif, pos="724,1224", width="0.75", height="0.5"];
+			"gd_device_jpeg/jpe/jpg" [label="jpeg/jpe/jpg", pos="724,1440", width="1.8333", height="0.5"];
+			gd_device_png [label=png, pos="724,1494", width="0.80556", height="0.5"];
+			gd_device_vrml [label=vrml, pos="724,1170", width="0.88889", height="0.5"];
+			gd_device_wbmp [label=wbmp, pos="724,1386", width="1.1389", height="0.5"];
+		}
+		subgraph gd_loadimage {
+			graph [rank=same,
+				lp="",
+				bb=""];
+			gd_loadimage_gd [label=gd, pos="306,1386", width="0.75", height="0.5"];
+			gd_loadimage_gd2 [label=gd2, pos="306,1278", width="0.80556", height="0.5"];
+			gd_loadimage_gif [label=gif, pos="306,1170", width="0.75", height="0.5"];
+			"gd_loadimage_jpeg/jpe/jpg" [label="jpeg/jpe/jpg", pos="306,1224", width="1.8333", height="0.5"];
+			gd_loadimage_png [label=png, pos="306,1332", width="0.80556", height="0.5"];
+		}
+		render_gd -> gd_device_gd [pos="e,696.67,1332 542.32,1332 579.17,1332 644.94,1332 686.42,1332"];
+		render_gd -> gd_device_gd2 [pos="e,697.05,1285 540.21,1325.5 576.82,1316 644.92,1298.4 687.16,1287.5"];
+		render_gd -> gd_device_gif [pos="e,700.16,1232.9 534.93,1319.6 562.17,1303 612.82,1272.9 658,1251 668.49,1245.9 680.19,1240.9 690.8,1236.6"];
+		render_gd -> "gd_device_jpeg/jpe/jpg" [pos="e,685.59,1425.3 534.93,1344.4 562.17,1361 612.82,1391.1 658,1413 663.77,1415.8 669.92,1418.6 676.04,1421.2"];
+		render_gd -> gd_device_png [pos="e,697.85,1485.8 528.49,1348.2 552.22,1375.7 604.05,1432.2 658,1467 667.31,1473 678.16,1478.1 688.35,1482.2"];
+		render_vrml -> gd_device_vrml [pos="e,691.23,1170 547.66,1170 583.59,1170 641.5,1170 681.09,1170"];
+		render_gd -> gd_device_wbmp [pos="e,688.58,1376.8 540.21,1338.5 574.48,1347.4 636.37,1363.4 678.78,1374.3"];
+		gd_loadimage_gd -> render_gd [pos="e,489.7,1338.5 331.21,1379.5 368.32,1369.9 437.8,1351.9 479.88,1341.1"];
+		gd_loadimage_gd2 -> render_gd [pos="e,489.52,1325.4 332.9,1284.9 370.38,1294.6 438.37,1312.2 479.83,1322.9"];
+		gd_loadimage_gif -> render_gd [pos="e,501.51,1315.8 330.57,1177.6 343.46,1182.2 359.2,1188.8 372,1197 421.32,1228.8 468.86,1278.7 494.79,1308.1"];
+		"gd_loadimage_jpeg/jpe/jpg" -> render_gd [pos="e,495.07,1319.6 344.41,1238.7 353.55,1242.5 363.2,1246.7 372,1251 412.77,1270.8 457.99,1297.2 486.44,1314.4"];
+		gd_loadimage_png -> render_gd [pos="e,487.84,1332 335.06,1332 372.31,1332 436.94,1332 477.76,1332"];
+	}
+	subgraph cluster_dot_layout {
+		graph [label=dot_layout,
+			lp="",
+			bb=""];
+		subgraph dot_layout_layout {
+			graph [rank=same];
+		}
+	}
+	subgraph output_formats {
+		graph [rank=same,
+			lp="",
+			bb=""];
+		output_canon [label=canon, pos="964,437", width="1.1111", height="0.5"];
+		output_cmap [label=cmap, pos="964,545", width="1.0278", height="0.5"];
+		output_cmapx [label=cmapx, pos="964,491", width="1.1667", height="0.5"];
+		output_cmapx_np [label=cmapx_np, pos="964,761", width="1.6667", height="0.5"];
+		"output_gv/dot" [label="gv/dot", pos="964,383", width="1.1389", height="0.5"];
+		output_eps [label=eps, pos="964,1031", width="0.77778", height="0.5"];
+		output_fig [label=fig, pos="964,869", width="0.75", height="0.5"];
+		output_imap [label=imap, pos="964,599", width="0.94444", height="0.5"];
+		output_imap_np [label=imap_np, pos="964,707", width="1.4167", height="0.5"];
+		output_ismap [label=ismap, pos="964,653", width="1.0833", height="0.5"];
+		output_plain [label=plain, pos="964,329", width="0.94444", height="0.5"];
+		"output_plain-ext" [label="plain-ext", pos="964,275", width="1.4722", height="0.5"];
+		output_ps [label=ps, pos="964,1101", width="0.75", height="0.5"];
+		output_ps2 [label=ps2, pos="964,977", width="0.77778", height="0.5"];
+		output_svg [label=svg, pos="964,923", width="0.77778", height="0.5"];
+		output_svgz [label=svgz, pos="964,815", width="0.91667", height="0.5"];
+		output_tk [label=tk, pos="964,221", width="0.75", height="0.5"];
+		output_vml [label=vml, pos="964,167", width="0.77778", height="0.5"];
+		output_vmlz [label=vmlz, pos="964,113", width="0.94444", height="0.5"];
+		output_xdot [label=xdot, pos="964,59", width="0.88889", height="0.5"];
+		output_pdf [label=pdf, pos="964,1826", width="0.75", height="0.5"];
+		output_png [label=png, pos="964,1703", width="0.80556", height="0.5"];
+		"output_x11/xlib" [label="x11/xlib", pos="964,1579", width="1.3611", height="0.5"];
+		output_gd [label=gd, pos="964,1332", width="0.75", height="0.5"];
+		output_gd2 [label=gd2, pos="964,1278", width="0.80556", height="0.5"];
+		output_gif [label=gif, pos="964,1224", width="0.75", height="0.5"];
+		"output_jpeg/jpe/jpg" [label="jpeg/jpe/jpg", pos="964,1440", width="1.8333", height="0.5"];
+		output_vrml [label=vrml, pos="964,1170", width="0.88889", height="0.5"];
+		output_wbmp [label=wbmp, pos="964,1386", width="1.1389", height="0.5"];
+	}
+	"input_(lib)" [label="(lib)", pos="66,1085", width="0.83333", height="0.5"];
+	input_eps [label=eps, pos="66,653", width="0.77778", height="0.5"];
+	input_gif [label=gif, pos="66,1154", width="0.75", height="0.5"];
+	"input_jpeg/jpe/jpg" [label="jpeg/jpe/jpg", pos="66,1216", width="1.8333", height="0.5"];
+	input_png [label=png, pos="66,1332", width="0.80556", height="0.5"];
+	input_ps [label=ps, pos="66,707", width="0.75", height="0.5"];
+	input_svg [label=svg, pos="66,599", width="0.77778", height="0.5"];
+	input_gd [label=gd, pos="66,1386", width="0.75", height="0.5"];
+	input_gd2 [label=gd2, pos="66,1278", width="0.80556", height="0.5"];
+	core_device_canon -> output_canon [pos="e,923.49,437 764.71,437 805.69,437 869.01,437 913.24,437"];
+	core_device_cmap -> output_cmap [pos="e,926.68,545 761.24,545 803.01,545 870.88,545 916.45,545"];
+	core_device_cmapx -> output_cmapx [pos="e,921.36,491 766.63,491 807.03,491 867.84,491 911.27,491"];
+	core_device_cmapx_np -> output_cmapx_np [pos="e,903.72,761 784.25,761 817.49,761 858.94,761 893.65,761"];
+	"core_device_gv/dot" -> "output_gv/dot" [pos="e,922.17,383 765.53,383 806.15,383 868.12,383 911.99,383"];
+	core_device_eps -> output_eps [pos="e,935.81,1031 752,1031 794.97,1031 877.27,1031 925.72,1031"];
+	core_device_fig -> output_fig [pos="e,938.14,874.82 749.68,917.22 792.7,907.54 879.38,888.04 928.3,877.03"];
+	core_device_imap -> output_imap [pos="e,929.37,599 758.64,599 801,599 872.78,599 919.28,599"];
+	core_device_imap_np -> output_imap_np [pos="e,912.31,707 775.78,707 812.84,707 862.91,707 902.09,707"];
+	core_device_ismap -> output_ismap [pos="e,924.92,653 763.09,653 804.5,653 869.96,653 914.83,653"];
+	core_device_plain -> output_plain [pos="e,929.37,329 758.64,329 801,329 872.78,329 919.28,329"];
+	"core_device_plain-ext" -> "output_plain-ext" [pos="e,910.19,275 777.56,275 813.83,275 861.93,275 900.18,275"];
+	core_device_ps -> output_ps [pos="e,937.03,1099.2 751.06,1086.8 794.12,1089.7 878.31,1095.3 926.94,1098.5"];
+	core_device_ps2 -> output_ps2 [pos="e,935.32,977 752.95,977 796.04,977 877.13,977 925.28,977"];
+	core_device_svg -> output_svg [pos="e,937.28,916.99 750.6,874.99 793.67,884.68 878.75,903.82 927.46,914.78"];
+	core_device_svgz -> output_svgz [pos="e,930.22,815 757.62,815 800.08,815 873.23,815 920.07,815"];
+	core_device_tk -> output_tk [pos="e,936.67,221 751.06,221 794.01,221 877.86,221 926.55,221"];
+	core_device_vml -> output_vml [pos="e,935.32,167 752.95,167 796.04,167 877.13,167 925.28,167"];
+	core_device_vmlz -> output_vmlz [pos="e,929.37,113 758.64,113 801,113 872.78,113 919.28,113"];
+	core_device_xdot -> output_xdot [pos="e,931.45,59 756.62,59 799.27,59 874.11,59 921.26,59"];
+	"input_(lib)" -> "core_loadimage_(lib)" [pos="e,275.85,1085 96.396,1085 139.32,1085 217.76,1085 265.56,1085"];
+	input_eps -> core_loadimage_eps [pos="e,277.81,653 94.001,653 136.97,653 219.27,653 267.72,653"];
+	input_gif -> core_loadimage_gif [pos="e,279.49,764.66 89.16,1144.3 103.4,1137.3 120.96,1126.5 132,1112 223.41,992.18 128.16,897.22 232,788 241.91,777.57 256.17,771.16\
+ 269.53,767.22"];
+	core_loadimage_gif -> render_vrml [pos="e,494.55,1155.8 331.96,766 345.58,769.87 361.56,776.57 372,788 482.35,908.84 390.33,1003.1 480,1140 482.05,1143.1 484.52,1146.1 \
+487.18,1148.9"];
+	"input_jpeg/jpe/jpg" -> "core_loadimage_jpeg/jpe/jpg" [pos="e,254.81,826.5 105.67,1201.4 115.41,1196.3 125.02,1189.5 132,1181 231.39,1059.4 124.48,956.52 232,842 236.02,837.72 240.77,834.12\
+ 245.89,831.08"];
+	"core_loadimage_jpeg/jpe/jpg" -> render_vrml [pos="e,494.74,1155.7 352.09,827.97 359.43,831.6 366.43,836.2 372,842 469.57,943.62 399.88,1024.1 480,1140 482.13,1143.1 484.65,1146 487.34\
+,1148.8"];
+	input_png -> core_loadimage_png [pos="e,299.03,886.72 93.563,1326.1 106.64,1322 121.63,1315.5 132,1305 135.89,1301.1 258.04,990.96 295.31,896.2"];
+	core_loadimage_png -> render_vrml [pos="e,495.9,1155.4 314.83,886.36 338.11,931.19 404.54,1053.4 480,1140 482.51,1142.9 485.31,1145.7 488.19,1148.5"];
+	input_ps -> core_loadimage_ps [pos="e,278.67,707 93.065,707 136.01,707 219.86,707 268.55,707"];
+	input_svg -> core_loadimage_svg [pos="e,277.81,599 94.001,599 136.97,599 219.27,599 267.72,599"];
+	cairo_device_pdf -> output_pdf [pos="e,936.67,1826 751.06,1826 794.01,1826 877.86,1826 926.55,1826"];
+	cairo_device_png -> output_png [pos="e,937.65,1710.6 750.6,1764.4 793.78,1751.9 879.2,1727.4 927.85,1713.4"];
+	cairo_device_ps -> output_ps [pos="e,940.56,1110.1 750.71,1714.9 766.76,1711.6 786.27,1704.9 798,1691 957.63,1501.8 759.79,1348.4 898,1143 906.16,1130.9 919.11,1121.5\
+ 931.39,1114.8"];
+	cairo_device_svg -> output_svg [pos="e,936.66,927.58 751.31,1659.8 767.38,1655.9 786.7,1648.4 798,1634 987.68,1392.3 708.7,1192 898,950 905.18,940.82 916.01,934.74 926.83\
+,930.72"];
+	input_png -> cairo_loadimage_png [pos="e,294.49,1647.1 93.105,1338.4 106.07,1342.6 121.09,1349.1 132,1359 202.64,1423.2 183.91,1466.6 232,1549 250.38,1580.5 273.34,1615.6\
+ 288.78,1638.6"];
+	cairo_loadimage_png -> render_ps [pos="e,502.87,1101.1 317.54,1647.2 332.05,1625.4 356.87,1585.8 372,1549 443.41,1375.1 404.64,1312.2 480,1140 484.61,1129.5 491.07,1118.6\
+ 497.18,1109.4"];
+	"xlib_device_x11/xlib" -> "output_x11/xlib" [pos="e,914.34,1579 773.73,1579 811.62,1579 863.94,1579 904.13,1579"];
+	render_cairo -> "xlib_device_x11/xlib" [pos="e,690.81,1592.5 542.32,1652.9 577.74,1638.5 639.87,1613.2 681.48,1596.3"];
+	gd_device_gd -> output_gd [pos="e,936.67,1332 751.06,1332 794.01,1332 877.86,1332 926.55,1332"];
+	render_cairo -> gd_device_gd [pos="e,698.33,1337.7 521.47,1646 542.87,1587.1 612.55,1402.2 658,1359 666.52,1350.9 677.79,1345.1 688.61,1341"];
+	gd_device_gd2 -> output_gd2 [pos="e,934.71,1278 753.43,1278 796.46,1278 876.64,1278 924.68,1278"];
+	render_cairo -> gd_device_gd2 [pos="e,696.43,1283.9 521.15,1646.3 545.09,1577.5 632.03,1331.2 658,1305 665.86,1297.1 676.37,1291.4 686.69,1287.3"];
+	gd_device_gif -> output_gif [pos="e,936.67,1224 751.06,1224 794.01,1224 877.86,1224 926.55,1224"];
+	render_cairo -> gd_device_gif [pos="e,697.87,1229.2 520.71,1646.2 545.52,1569 643.44,1266.4 658,1251 666.08,1242.5 677.24,1236.5 688.09,1232.5"];
+	"gd_device_jpeg/jpe/jpg" -> "output_jpeg/jpe/jpg" [pos="e,898,1440 790.22,1440 820.51,1440 856.58,1440 887.98,1440"];
+	render_cairo -> "gd_device_jpeg/jpe/jpg" [pos="e,680.55,1453.7 523.42,1646.5 542.38,1608.7 592.02,1518.8 658,1467 662.09,1463.8 666.62,1460.9 671.34,1458.3"];
+	gd_device_png -> output_png [pos="e,948.5,1687.5 743.29,1507.5 758.49,1518.3 780.03,1534.1 798,1549 851.23,1593.2 909.77,1649.5 941.13,1680.3"];
+	render_cairo -> gd_device_png [pos="e,706.17,1508.5 533.92,1648.6 571.5,1618 655.63,1549.6 698.23,1515"];
+	gd_device_vrml -> output_vrml [pos="e,931.45,1170 756.62,1170 799.27,1170 874.11,1170 921.26,1170"];
+	gd_device_wbmp -> output_wbmp [pos="e,922.88,1386 765.26,1386 806.08,1386 868.66,1386 912.67,1386"];
+	render_cairo -> gd_device_wbmp [pos="e,689.01,1395.4 520.57,1646.2 535.52,1601 580.75,1480.8 658,1413 664.28,1407.5 671.84,1403 679.57,1399.4"];
+	input_gd -> gd_loadimage_gd [pos="e,278.67,1386 93.065,1386 136.01,1386 219.86,1386 268.55,1386"];
+	gd_loadimage_gd -> render_cairo [pos="e,502.3,1647.1 318.14,1402.1 353.04,1448.6 453.83,1582.6 496.04,1638.8"];
+	gd_loadimage_gd -> render_ps [pos="e,503.8,1101.6 331.59,1380.2 344.94,1376.1 360.77,1369.5 372,1359 451.37,1285 426.79,1234.6 480,1140 485.64,1130 492.31,1119.3 498.31\
+,1110"];
+	input_gd2 -> gd_loadimage_gd2 [pos="e,276.71,1278 95.429,1278 138.46,1278 218.64,1278 266.68,1278"];
+	gd_loadimage_gd2 -> render_cairo [pos="e,508.85,1646.3 333.57,1283.9 346.64,1288 361.63,1294.5 372,1305 396.85,1330.1 477.55,1556.7 505.43,1636.4"];
+	gd_loadimage_gd2 -> render_ps [pos="e,504.6,1101.7 332.52,1270.4 345.2,1265.9 360.14,1259.5 372,1251 427.35,1211.1 475.32,1145.7 499.09,1110"];
+	input_gif -> gd_loadimage_gif [pos="e,279.03,1168.2 93.065,1155.8 136.12,1158.7 220.31,1164.3 268.94,1167.5"];
+	gd_loadimage_gif -> render_cairo [pos="e,509.52,1646 331.96,1175 345.59,1178.9 361.57,1185.6 372,1197 372.97,1198.1 476.02,1536.1 506.56,1636.3"];
+	gd_loadimage_gif -> render_ps [pos="e,491.73,1094.5 329.17,1160.6 366.44,1145.4 439.83,1115.6 482.38,1098.3"];
+	"input_jpeg/jpe/jpg" -> "gd_loadimage_jpeg/jpe/jpg" [pos="e,240.08,1221.8 131.58,1218.2 162.01,1219.2 198.37,1220.4 229.99,1221.5"];
+	"gd_loadimage_jpeg/jpe/jpg" -> render_cairo [pos="e,509.29,1646.2 352.16,1236.9 359.49,1240.5 366.47,1245.2 372,1251 386,1265.8 477.14,1546.4 506.15,1636.4"];
+	"gd_loadimage_jpeg/jpe/jpg" -> render_ps [pos="e,499.33,1099.7 346.29,1209.6 354.98,1205.9 363.97,1201.7 372,1197 417.66,1170.5 464.78,1130.7 491.91,1106.4"];
+	input_png -> gd_loadimage_png [pos="e,276.71,1332 95.429,1332 138.46,1332 218.64,1332 266.68,1332"];
+	gd_loadimage_png -> render_ps [pos="e,504.42,1101.6 333.05,1325 345.84,1320.8 360.75,1314.3 372,1305 376.42,1301.3 462.65,1166.9 499.03,1110"];
+	gd_loadimage_png -> render_cairo [pos="e,508.53,1646 333.3,1338.2 346.31,1342.3 361.33,1348.8 372,1359 415.23,1400.1 480.38,1569.4 505.06,1636.5"];
+}

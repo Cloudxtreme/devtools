@@ -1,0 +1,8 @@
+Package: rdisc6
+Version: 1.0.2-1
+Depends: libc, libpthread, librt
+Source: feeds/oldpackages/ipv6/ndisc
+Section: net
+Architecture: ar71xx
+Installed-Size: 5751
+Description:  An ICMPv6 router discovery tool

@@ -1,0 +1,38 @@
+#!/bin/bash
+#smbget.fingo
+#Feb-2012rh
+#
+smbget -u rh -p P71391 smb://rh-pc/pannet-trunk-alfa/pconfigure.sh
+
+rh@debian6esxi:~/xfer$ smbtree
+Enter rh's password: 
+WORKGROUP
+	\\RH-PC          		
+		\\RH-PC\Users          	
+		\\RH-PC\PanNet14122011 	
+		\\RH-PC\PanNet-trunk-alfa	
+		\\RH-PC\Movie          	
+		\\RH-PC\J$             	Standardfreigabe
+		\\RH-PC\IPC$           	Remote-IPC
+		\\RH-PC\H$             	Standardfreigabe
+		\\RH-PC\G$             	Standardfreigabe
+		\\RH-PC\F$             	Standardfreigabe
+		\\RH-PC\E$             	Standardfreigabe
+		\\RH-PC\Data_E         	
+		\\RH-PC\CD-D           	
+		\\RH-PC\C$             	Standardfreigabe
+		\\RH-PC\ADMIN$         	Remoteverwaltung
+		\\RH-PC\08012012       	
+	\\DEBIAN6ESXI    		debian6esxi server
+		\\DEBIAN6ESXI\print$         	Printer Drivers
+		\\DEBIAN6ESXI\IPC$           	IPC Service (debian6esxi server)
+rh@debian6esxi:~/xfer$ 
+#
+rempasswd=T71597
+ smbget -u rh -p $rempasswd smb://rh-pc/pannet-trunk-alfa/PanManHost
+
+rh@debian6esxi:~/xfer$ smbclient //RH-PC/pannet-trunk-alfa
+Enter rh's password: 
+Domain=[RH-PC] OS=[Windows 7 Enterprise 7601 Service Pack 1] Server=[Windows 7 Enterprise 6.1]
+smb: \> ls
+

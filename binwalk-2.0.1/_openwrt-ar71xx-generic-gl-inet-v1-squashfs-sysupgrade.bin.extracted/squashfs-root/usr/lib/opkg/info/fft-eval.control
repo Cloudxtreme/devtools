@@ -1,0 +1,9 @@
+Package: fft-eval
+Version: 2013-06-26-236940c6b92f89a4cc8f77412b18a521ab9d9f8b
+Depends: libc
+Source: feeds/lime/packages/fft-eval
+Section: utils
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 3477
+Description:  Evaluates FFT samples from ath9k driver

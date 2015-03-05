@@ -1,0 +1,4 @@
+/www/luci-static/resources/jquery.flot.min.js
+/usr/lib/lua/luci/controller/openairview.lua
+/usr/lib/lua/luci/view/openairview/stations.htm
+/usr/lib/lua/luci/view/openairview/spectral_scan.htm

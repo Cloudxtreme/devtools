@@ -1,0 +1,8 @@
+Package: luci-lib-libremap
+Version: 0.1.6
+Depends: libc, luci-lib-core, luci-lib-json, luci-lib-httpclient, libuci-lua
+Source: feeds/libremap/libremap-agent
+Section: luci
+Architecture: ar71xx
+Installed-Size: 2473
+Description:  LibreMap base library

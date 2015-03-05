@@ -1,0 +1,9 @@
+Package: lime-system
+Version: 2015-01-17-1421452807
+Depends: libc, lua, libuci-lua, luci-base, luci-lib-nixio
+Source: feeds/lime/packages/lime-system
+Section: opt
+Maintainer: Gioacchino Mazzurco <gio@eigenlab.org>
+Architecture: ar71xx
+Installed-Size: 8952
+Description:  Basic system files for LiMe node

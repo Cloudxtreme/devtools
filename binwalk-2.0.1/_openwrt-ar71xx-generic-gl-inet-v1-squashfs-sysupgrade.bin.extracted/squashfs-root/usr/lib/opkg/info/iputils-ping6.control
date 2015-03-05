@@ -1,0 +1,10 @@
+Package: iputils-ping6
+Version: 20101006-1
+Depends: libc
+Source: package/network/utils/iputils
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 11842
+Description:  Program ping6 from iputils.
+ Sends ICMP ECHO_REQUEST to network hosts (IPv6).

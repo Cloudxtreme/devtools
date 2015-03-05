@@ -1,0 +1,9 @@
+Package: luci-app-batman-adv
+Version: 2015-01-17-1421452807
+Depends: libc, kmod-batman-adv, luci-lib-jquery-1-4
+Source: feeds/lime/packages/luci-app-batman-adv
+Section: luci
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 29989
+Description:  B.A.T.M.A.N.-Adv status module

@@ -1,0 +1,11 @@
+Package: kmod-batman-adv
+Version: 3.10.49+2014.2.0-1
+Depends: kernel (=3.10.49-1-7e0df81f58d3eefff63ef1e9850f6926), kmod-lib-crc16, kmod-crypto-core, kmod-crypto-crc32c, kmod-lib-crc32c
+Source: feeds/routing/batman-adv
+Section: kernel
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: ar71xx
+Installed-Size: 65619
+Description:  B.A.T.M.A.N. advanced is a kernel module which allows to
+ build layer 2 mesh networks. This package builds
+ version 2014.2.0 of the kernel module.

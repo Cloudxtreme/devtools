@@ -1,0 +1,16 @@
+Package: safe-reboot
+Version: 2015-01-17-1421452807
+Depends: libc
+Source: feeds/lime/packages/safe-reboot
+Section: utils
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 2384
+Description:  When you run safe-reboot specifying a grace time, it makes a backup of /etc at that point,
+ and after the grace time reboots the system. At the next boot, it waits again for a timeout;
+ if you can't login and delete the backup, it will restore it and reboot.
+ This mechanism makes it possible to run safe-reboot, try risky operations (like restarting
+ the network), and if something goes wrong, just wait for the fallback timeout.
+ Even more, you can make actual changes to /etc config and reboot. If it comes back up right,
+ you can login and delete the backup. If something went wrong with the new /etc, just wait
+ for the revert timeout.

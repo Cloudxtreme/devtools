@@ -1,0 +1,9 @@
+Package: dnsmasq-lease-share
+Version: 2015-01-17-1421452807
+Depends: libc, alfred, lua, libuci-lua
+Source: feeds/lime/packages/dnsmasq-lease-share
+Section: net
+Maintainer: Gioacchino Mazzurco <gio@eigenlab.org>
+Architecture: ar71xx
+Installed-Size: 1818
+Description:  Share dnsmasq lease file accross all batman-adv nodes of a mesh with enabled alfred

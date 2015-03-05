@@ -1,0 +1,9 @@
+Package: luci-lib-httpclient
+Version: 0.12+git-15.006.29251-d876593-1
+Depends: libc, luci-base, luci-base, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ar71xx
+Installed-Size: 4912
+Description:  HTTP(S) client library

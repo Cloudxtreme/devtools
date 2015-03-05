@@ -1,0 +1,11 @@
+Package: luci-app-openairview
+Version: 2015-01-17-1421452807
+Depends: libc, fft-eval, luci-lib-jquery-1-4, luci-lib-json
+Source: feeds/lime/packages/luci-app-openairview
+Section: luci
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 17004
+Description:  Includes a realtime spectral scan for ath9k chipsets,
+ a realtime plot of wifi neighbours signal (think "iw station dump")
+ and a site survey of wifi networks, with signal plots (think "iw scan")

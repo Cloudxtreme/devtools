@@ -1,0 +1,9 @@
+Byte swapping needed (utility low endian, module big endian)
+Patching @ 0x000002f0: ath_is_radar_freq() MIPS opcode in ath/regd.o
+Patching @ 0x000003fc: ath_is_radar_freq() MIPS opcode in ath/regd.o
+Patching @ 0x0000342c: ath world regdomain with 5 rules in ath/regd.o
+Patching @ 0x000034cc: ath world regdomain with 4 rules in ath/regd.o
+Patching @ 0x00003550: ath world regdomain with 4 rules in ath/regd.o
+Patching @ 0x000035d4: ath world regdomain with 5 rules in ath/regd.o
+Byte swapping needed (utility low endian, module big endian)
+Patching @ 0x0002589c: core world6 regdomain in cfg80211/reg.o

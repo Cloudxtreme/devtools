@@ -1,0 +1,8 @@
+Package: netperf
+Version: 2.6.0-1
+Depends: libc
+Source: feeds/oldpackages/net/netperf
+Section: net
+Architecture: ar71xx
+Installed-Size: 136110
+Description:  Network performance measurement tool

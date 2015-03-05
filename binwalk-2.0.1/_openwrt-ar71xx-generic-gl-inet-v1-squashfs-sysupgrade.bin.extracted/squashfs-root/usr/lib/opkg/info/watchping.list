@@ -1,0 +1,5 @@
+/etc/watchping/wan-ok.d/README
+/usr/bin/watchping
+/etc/watchping/wan-fail.d/README
+/etc/init.d/watchping
+/etc/uci-defaults/90_watchping

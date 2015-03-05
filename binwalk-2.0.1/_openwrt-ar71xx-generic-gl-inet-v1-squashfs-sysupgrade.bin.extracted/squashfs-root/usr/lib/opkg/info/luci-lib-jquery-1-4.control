@@ -1,0 +1,9 @@
+Package: luci-lib-jquery-1-4
+Version: 1.4-1
+Depends: libc
+Source: feeds/lime/packages/luci-lib-jquery
+Section: luci
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 24832
+Description:  jQuery library

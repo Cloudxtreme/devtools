@@ -1,0 +1,384 @@
+--12:10:31-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/README.md'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/README.md
+Connecting to 195.47.247.237:21... connected! 
+==> AUTH TLS ... failed ('AUTH': command unrecognized.).
+
+Logging in as trizonelabs.com ... # User trizonelabs.com has group access to:  625338    
+Logged in!
+==> CWD BRUCET14T/BRupdate14Ta/files.build
+==> TYPE I ... done.
+==> SIZE README.md ... done (120 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/README.md
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/index.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/index.html
+==> CWD www/private
+==> SIZE index.html ... done (2910 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/index.html
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/home.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/home.html
+==> SIZE home.html ... done (1455 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/home.html
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/upgrade.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/upgrade.js
+==> SIZE upgrade.js ... done (1 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/upgrade.js
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/password.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/password.html
+==> SIZE password.html ... done (497 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/password.html
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/batman-adv.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/batman-adv.js
+==> SIZE batman-adv.js ... done (663 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/batman-adv.js
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/nodogsplash.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/nodogsplash.js
+==> SIZE nodogsplash.js ... done (1661 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/nodogsplash.js
+--12:10:32-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/wifiscan.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/wifiscan.js
+==> SIZE wifiscan.js ... done (1463 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/wifiscan.js
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/batman-adv.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/batman-adv.html
+==> SIZE batman-adv.html ... done (550 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/batman-adv.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/wifiscan.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/wifiscan.html
+==> SIZE wifiscan.html ... done (572 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/wifiscan.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/nodogsplash.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/nodogsplash.html
+==> SIZE nodogsplash.html ... done (1745 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/nodogsplash.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/fastd.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/fastd.html
+==> SIZE fastd.html ... done (823 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/fastd.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/style.css'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/style.css
+==> SIZE style.css ... done (2899 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/style.css
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/terminal.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/terminal.html
+==> SIZE terminal.html ... done (443 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/terminal.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/terminal.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/terminal.js
+==> SIZE terminal.js ... done (223 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/terminal.js
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/settings.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/settings.html
+==> SIZE settings.html ... done (410 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/settings.html
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/shared.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/shared.js
+==> SIZE shared.js ... done (9097 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/shared.js
+--12:10:33-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/nodogsplash'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/nodogsplash
+==> CWD cgi-bin
+==> SIZE nodogsplash ... done (2001 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/nodogsplash
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/upgrade'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/upgrade
+==> SIZE upgrade ... done (403 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/upgrade
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/fastd'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/fastd
+==> SIZE fastd ... done (692 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/fastd
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/password'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/password
+==> SIZE password ... done (458 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/password
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/settings'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/settings
+==> SIZE settings ... done (635 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/settings
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/batman-adv'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/batman-adv
+==> SIZE batman-adv ... done (234 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/batman-adv
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/misc'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/misc
+==> SIZE misc ... done (2142 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/misc
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/terminal'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/cgi-bin/terminal
+==> SIZE terminal ... done (152 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/cgi-bin/terminal
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/password.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/password.js
+==> CWD ..
+==> SIZE password.js ... done (265 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/password.js
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/settings.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/settings.js
+==> SIZE settings.js ... done (16445 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/settings.js
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/upgrade.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/upgrade.html
+==> SIZE upgrade.html ... done (958 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/upgrade.html
+--12:10:34-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/fastd.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/fastd.js
+==> SIZE fastd.js ... done (6999 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/fastd.js
+--12:10:35-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/home.js'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/private/home.js
+==> SIZE home.js ... done (169 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/private/home.js
+--12:10:35-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/public/index.cgi'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/www/public/index.cgi
+==> CWD ../public
+==> SIZE index.cgi ... done (1827 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/www/public/index.cgi
+--12:10:35-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/htdocs/images/internet-icon.png'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/nodogsplash/htdocs/images/internet-icon.png
+==> CWD ../../etc/nodogsplash/htdocs/images
+==> SIZE internet-icon.png ... done (88750 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/htdocs/images/internet-icon.png
+--12:10:35-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/htdocs/images/styles.css'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/nodogsplash/htdocs/images/styles.css
+==> SIZE styles.css ... failed.
+==> PASV ... done.
+==> STOR styles.css ... done.
+Length: 1,917
+    0K 
+# File successfully transferred
+12:10:36 (styles.css) - ` 7.91K/s' [1917]
+
+--12:10:36-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/htdocs/images/trizon_logo-bggrau.jpg'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/nodogsplash/htdocs/images/trizon_logo-bggrau.jpg
+==> SIZE trizon_logo-bggrau.jpg ... failed.
+==> PASV ... done.
+==> STOR trizon_logo-bggrau.jpg ... done.
+Length: 5,257
+    0K 
+# File successfully transferred
+12:10:36 (trizon_logo-bggrau.jpg) - `15.81K/s' [5257]
+
+--12:10:36-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/htdocs/splash.html'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/nodogsplash/htdocs/splash.html
+==> CWD ..
+==> SIZE splash.html ... done (796 bytes)
+==> PASV ... done.
+==> STOR splash.html ... done.
+Length: 1,541
+    0K 
+# File successfully transferred
+12:10:37 (splash.html) - ` 6.34K/s' [1541]
+
+--12:10:37-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/nodogsplash/nodogsplash.conf'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/nodogsplash/nodogsplash.conf
+==> CWD ..
+==> TYPE A ... done.
+==> SIZE nodogsplash.conf ... done (12831 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR nodogsplash.conf ... done.
+Length: 12,899
+    0K .
+# File successfully transferred
+12:10:38 (nodogsplash.conf) - `30.12K/s' [12899]
+
+--12:10:38-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/passwd-'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/passwd-
+==> CWD ..
+==> TYPE I ... done.
+==> SIZE passwd- ... done (190 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/passwd-
+--12:10:38-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/shadow'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/shadow
+==> SIZE shadow ... done (149 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/shadow
+--12:10:38-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/shadow-'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/shadow-
+==> SIZE shadow- ... done (116 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/shadow-
+--12:10:38-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/crontabs/root'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/crontabs/root
+==> CWD crontabs
+==> SIZE root ... done (63 bytes)
+==> PASV ... done.
+==> STOR root ... done.
+Length: 59
+    0K 
+# File successfully transferred
+12:10:39 (root) - ` 2.35K/s' [59]
+
+--12:10:39-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/udhcpc.user'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/udhcpc.user
+==> CWD ..
+==> SIZE udhcpc.user ... done (229 bytes)
+==> PASV ... done.
+==> STOR udhcpc.user ... done.
+Length: 201
+    0K 
+# File successfully transferred
+12:10:40 (udhcpc.user) - ` 2.49K/s' [201]
+
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/httpd.conf'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/httpd.conf
+==> TYPE A ... done.
+==> SIZE httpd.conf ... done (29 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/httpd.conf
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/20-firewall'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/iface/20-firewall
+==> CWD hotplug.d/iface
+==> TYPE I ... done.
+==> SIZE 20-firewall ... done (419 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/20-firewall
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/99-iface_debug'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/iface/99-iface_debug
+==> SIZE 99-iface_debug ... done (233 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/99-iface_debug
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/00-netstate'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/iface/00-netstate
+==> SIZE 00-netstate ... done (244 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/00-netstate
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/25-dnsmasq'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/iface/25-dnsmasq
+==> SIZE 25-dnsmasq ... done (100 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/iface/25-dnsmasq
+--12:10:40-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/net/99-batman-adv'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/net/99-batman-adv
+==> CWD ../net
+==> SIZE 99-batman-adv ... done (991 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/net/99-batman-adv
+--12:10:41-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/net/98-batman-adv'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/hotplug.d/net/98-batman-adv
+==> SIZE 98-batman-adv ... done (186 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/hotplug.d/net/98-batman-adv
+--12:10:41-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/passwd'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/passwd
+==> CWD ../..
+==> SIZE passwd ... done (190 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/passwd
+--12:10:41-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRcommon14T'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRcommon14T
+==> CWD BRUCET
+==> SIZE BRcommon14T ... done (4488 bytes)
+==> PASV ... done.
+==> REST 3584 ... done.
+==> STOR BRcommon14T ... done.
+Length: 4,460 [876 to go]
+       [ skipped 3K ]
+    0K ,,,,
+# File successfully transferred
+12:10:41 (BRcommon14T) - ` 3.85K/s' [4460]
+
+--12:10:41-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRstart14T.sh'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRstart14T.sh
+==> TYPE A ... done.
+==> SIZE BRstart14T.sh ... done (13606 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR BRstart14T.sh ... done.
+Length: 13,591
+    0K .
+# File successfully transferred
+12:10:42 (BRstart14T.sh) - `31.73K/s' [13591]
+
+--12:10:42-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRsetup14T.sh'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRsetup14T.sh
+==> SIZE BRsetup14T.sh ... done (15062 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR BRsetup14T.sh ... done.
+Length: 15,061
+    0K .
+# File successfully transferred
+12:10:43 (BRsetup14T.sh) - `34.93K/s' [15061]
+
+--12:10:43-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRcheckin14T.sh'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRcheckin14T.sh
+==> SIZE BRcheckin14T.sh ... done (26567 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR BRcheckin14T.sh ... done.
+Length: 26,757
+    0K .
+# File successfully transferred
+12:10:44 (BRcheckin14T.sh) - `49.81K/s' [26757]
+
+--12:10:44-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRcheck14T.sh'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRcheck14T.sh
+==> SIZE BRcheck14T.sh ... done (16031 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR BRcheck14T.sh ... done.
+Length: 16,991
+    0K .
+# File successfully transferred
+12:10:45 (BRcheck14T.sh) - `38.95K/s' [16991]
+
+--12:10:45-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/BRUCET/BRupdate.sh'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/BRUCET/BRupdate.sh
+==> SIZE BRupdate.sh ... done (263 bytes)
+==> PASV ... done.
+Disabling resuming due to ascii-mode transfer
+==> STOR BRupdate.sh ... done.
+Length: 235
+    0K 
+# File successfully transferred
+12:10:45 (BRupdate.sh) - ` 1.04K/s' [235]
+
+--12:10:45-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/config/uhttpd'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/config/uhttpd
+==> CWD ../config
+==> TYPE I ... done.
+==> SIZE uhttpd ... done (460 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/config/uhttpd
+--12:10:45-- `/home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/config/BRUCET'
+    => ftp://trizonelabs.com:xxxxx@195.47.247.237:21/BRUCET14T/BRupdate14Ta/files.build/etc/config/BRUCET
+==> SIZE BRUCET ... done (1975 bytes)
+Skipping this file due to resume/upload/skip rules.
+-- Skipping file: /home/rh/BRUCET/BRUCE14T/DEV.firmware/files.build/etc/config/BRUCET
+FINISHED --12:10:46--
+Transfered 98,942 bytes in 12 files at  6.54K/s
+Skipped 45 files.

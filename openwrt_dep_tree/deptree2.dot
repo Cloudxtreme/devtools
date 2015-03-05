@@ -1,0 +1,30 @@
+digraph G {
+
+overlap=scale;
+ratio="fill";
+overlap="prism";
+ranksep = 1.5;
+splines=true;
+sep="+25,25";
+overlap=scalexy;
+edge [arrowsize=1.0];
+fontname="Monospace";
+lucilibhttpclient -> lucibase;
+lucilibhttpclient -> lucilibnixio;
+lucii18nenglish -> libc;
+luciappsplash -> lucilibnixio;
+luciappsplash -> tc;
+luciappsplash -> kmodsched;
+luciappsplash -> iptablesmodnatextra;
+luciappsplash -> iptablesmodipopt;
+lucimodadminfull -> lucibase;
+freifunkcommon -> libc;
+lucithemebootstrap -> libc;
+lucibase -> libc;
+lucibase -> lua;
+lucibase -> libucilua;
+lucibase -> libubuslua;
+lucilibjson -> libc;
+communityprofiles -> freifunkcommon;
+lucilibnixio -> lucibase;
+}

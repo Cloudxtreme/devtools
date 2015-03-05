@@ -1,0 +1,9 @@
+Package: reghack
+Version: 20140207-1421452807
+Depends: libc
+Source: feeds/lime/packages/reghack
+Section: opt
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 3656
+Description:  Regulatory domain unlocker

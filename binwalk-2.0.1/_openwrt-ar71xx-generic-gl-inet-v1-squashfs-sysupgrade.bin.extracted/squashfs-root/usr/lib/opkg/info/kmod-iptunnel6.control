@@ -1,0 +1,10 @@
+Package: kmod-iptunnel6
+Version: 3.10.49-1
+Depends: kernel (=3.10.49-1-3fa66637f99eb30b87aaff9e33cc9ccb), kmod-ipv6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: ar71xx
+Installed-Size: 1867
+Description:  Kernel modules for IPv6 tunneling

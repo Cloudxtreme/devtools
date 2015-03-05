@@ -1,0 +1,66 @@
+rh@debian6esxi:~/Xfer/BRUCExfer$ grep -n "uci set" ./* | awk 'BEGIN{FS="[ $]*";RS="="}{print $0,$1,$2,$3,$4}'
+
+1:./conn_state.sh:272: 2:#if 3:has_active_gateway; 4: then
+1:./conn_state.sh:295: 2:uci 3:set 4: ${_CONFFILE}.client.inet_active=0
+1:./conn_state.sh:353: 2:local 3:_addrlist="8.8.4.4 4: www.google.com
+1:./conn_state.sh:384: 2:uci 3:set 4: ${_CONFFILE}.client.inet_active=1
+1:./conn_state.sh:387: 2:uci 3:set 4: ${_CONFFILE}.client.inet_active=0
+1:./conn_state.sh:391: 2:uci 3:set 4: ${_CONFFILE}.client.inet_active=0
+rh@debian6esxi:~/Xfer/BRUCExfer$ grep -n "uci" ./* | awk  '{print "1:" $1, "2:"$2, "3:" $3 ,"4:",$4}'
+
+grep -n "uci [set | get]" ./* 
+
+grep -n "uci [set |get ]" ./* | awk 'BEGIN{FS="[ ]*";RS="\n"}{print $4,$1}' |sort |uniq
+
+grep -n "uci [set |get ]" ./* | awk 'BEGIN{FS="[ ]*";RS="\n"}{print $4,$1}' | sort -k2 -t.
+
+2 down vote
+	
+
+You can do this with two calls to sed by first replacing the white spaces with new lines then piping that output to another instance of sed which deletes everything else.
+
+sed 's/ /\n/g' | sed '1,/MATCH1/d;/MATCH2/,$d'
+
+
+Edit
+
+If the first line (after substitution) happens to be MATCH1, gnu sed can work around that by using 0,/MATCH1/ instead of 1,/MATCH1/ like so:
+
+sed 's/ /\n/g' | sed '0,/MATCH1/d;/MATCH2/,$d'
+
+Edit2
+
+Optimized version of the single call to sed solution that only needs 3 replacements instead of 4
+
+sed -r 's/MATCH1/&\n/;s/MATCH2/\n&/;s/^.*\n(.*)\n.*$/\1/'
+
+########################################
+grep -n "uci [set |get ]" ./* | awk 'BEGIN{FS="[ ]*";RS="\n"}{print $4,$1}' | sort -k2 -t.
+
+network.lan.ipaddr=$(uci ./bstart.sh:271:
+network.lan.netmask="255.255.0.0" ./bstart.sh:272:
+network.lan.proto='static' ./bstart.sh:270:
+cp_switch.main.which_handler) ./bstatcheckin.sh:371:
+wireless.radio0.type) ./bconfigure.sh:204:
+wireless.${_radion}.channel=1 ./bconfigure.sh:208:
+wireless.${_radion}.disabled=0 ./bconfigure.sh:210:
+wireless.${_radion}.hwmode='11g' ./bconfigure.sh:209:
+wireless.${_radion}.softled=0 ./bconfigure.sh:211:
+flags.status.RR) ./bstatcheckin.sh:372:
+system.@system[0].hostname='B.R.U.C.E('$4$5$6')' ./bconfigure.sh:263:#
+system.@system[0].hostname=$_hostname ./bconfigure.sh:262:
+${_CONFFILE}.${_tracker}.domain) ./bstatcheckin.sh:91:
+${_CONFFILE}.${_tracker}.enabled) ./bstatcheckin.sh:94:
+${_CONFFILE}.${_tracker}.host) ./bstatcheckin.sh:85:
+${_CONFFILE}.${_tracker}.network) ./bstatcheckin.sh:92:
+${_CONFFILE}.${_tracker}.password) ./bstatcheckin.sh:89:
+${_CONFFILE}.${_tracker}.proot) ./bstatcheckin.sh:86:
+${_CONFFILE}.${_tracker}.username) ./bstatcheckin.sh:88:
+wireless.@wifi-iface[0].encryption=none ./bconfigure.sh:219:
+wireless.@wifi-iface[0].mode=ap ./bconfigure.sh:215:
+wireless.@wifi-iface[0].network=lan ./bconfigure.sh:214:
+wireless.@wifi-iface[0].ssid="BRUCE-${_hostname}-AP" ./bconfigure.sh:217:
+wireless.@wifi-iface[-1].bssid=$(uci ./bconfigure.sh:232:
+######################
+
+

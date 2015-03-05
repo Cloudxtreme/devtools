@@ -1,0 +1,9 @@
+Package: lime-proto-batadv
+Version: 2015-01-17-1421452807
+Depends: libc, lime-system, lua, libuci-lua, kmod-batman-adv
+Source: feeds/lime/packages/lime-proto-batadv
+Section: opt
+Maintainer: Gioacchino Mazzurco <gio@eigenlab.org>
+Architecture: ar71xx
+Installed-Size: 982
+Description:  LiMe batman-adv proto support

@@ -1,0 +1,9 @@
+Package: luci-app-bmx6
+Version: 2
+Depends: libc, luci-lib-json, luci-mod-admin-core, luci-lib-httpclient, bmx6
+Source: feeds/routing/luci-app-bmx6
+Section: luci
+Maintainer: Pau Escrich <p4u@dabax.net>
+Architecture: ar71xx
+Installed-Size: 92284
+Description:  bmx6 web module for LuCi web interface

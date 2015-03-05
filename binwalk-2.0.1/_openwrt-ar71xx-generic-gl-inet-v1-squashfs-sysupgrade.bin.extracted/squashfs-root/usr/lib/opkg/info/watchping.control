@@ -1,0 +1,11 @@
+Package: watchping
+Version: 2015-01-17-1421452807
+Depends: libc
+Source: feeds/lime/packages/watchping
+Section: utils
+Maintainer: Gui Iribarren <gui@altermundi.net>
+Architecture: ar71xx
+Installed-Size: 2305
+Description:  Checks reachability of given host(s) through particular interface(s) (e.g. 8.8.8.8 on WAN).
+ Action hooks are run from /etc/watchping/*.d/
+ Configuration is done in /etc/config/system.

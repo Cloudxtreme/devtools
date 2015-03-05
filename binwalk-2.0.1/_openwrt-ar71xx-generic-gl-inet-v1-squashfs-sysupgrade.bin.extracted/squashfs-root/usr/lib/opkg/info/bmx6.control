@@ -1,0 +1,9 @@
+Package: bmx6
+Version: r2014112401-4
+Depends: libc, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ar71xx
+Installed-Size: 128670
+Description:  BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6

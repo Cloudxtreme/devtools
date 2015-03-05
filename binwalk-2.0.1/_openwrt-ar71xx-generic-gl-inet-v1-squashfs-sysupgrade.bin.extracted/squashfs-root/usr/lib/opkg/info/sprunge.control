@@ -1,0 +1,9 @@
+Package: sprunge
+Version: 2015-01-17-1421452807
+Depends: libc
+Source: feeds/lime/packages/sprunge
+Section: utils
+Maintainer: Ilario Gelmetti <ilario@eigenlab.org>
+Architecture: ar71xx
+Installed-Size: 639
+Description:  sprunge.us command line pastebin

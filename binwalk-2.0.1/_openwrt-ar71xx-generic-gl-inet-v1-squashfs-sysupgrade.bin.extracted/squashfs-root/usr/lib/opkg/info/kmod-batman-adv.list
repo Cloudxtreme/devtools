@@ -1,0 +1,7 @@
+/lib/netifd/proto/batadv_vlan.sh
+/etc/hotplug.d/net/99-batman-adv
+/lib/modules/3.10.49/batman-adv.ko
+/lib/batman-adv/config.sh
+/etc/config/batman-adv
+/etc/modules.d/50-batman-adv
+/lib/netifd/proto/batadv.sh

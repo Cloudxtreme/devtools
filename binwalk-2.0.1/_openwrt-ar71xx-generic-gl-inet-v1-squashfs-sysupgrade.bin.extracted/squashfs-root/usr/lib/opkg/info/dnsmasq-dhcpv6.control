@@ -1,0 +1,12 @@
+Package: dnsmasq-dhcpv6
+Version: 2.71-4
+Depends: libc, kmod-ipv6
+Source: package/network/services/dnsmasq
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Architecture: ar71xx
+Installed-Size: 98285
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+ 
+ This is a variant with DHCPv6 support

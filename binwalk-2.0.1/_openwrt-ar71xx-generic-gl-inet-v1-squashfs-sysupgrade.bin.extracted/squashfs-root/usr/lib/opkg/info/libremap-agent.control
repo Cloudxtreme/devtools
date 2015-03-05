@@ -1,0 +1,8 @@
+Package: libremap-agent
+Version: 0.1.6
+Depends: libc, luci-lib-libremap
+Source: feeds/libremap/libremap-agent
+Section: utilities
+Architecture: ar71xx
+Installed-Size: 2197
+Description:  LibreMap router database and map submit agent

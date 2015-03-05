@@ -1,0 +1,102 @@
+#!/usr/bin/lua
+
+local luci_uci = require 'luci.model.uci'
+local libremap = require 'luci.libremap'
+local util = require 'luci.libremap.util'
+local nixio = require 'nixio'
+
+local function main()
+    -- init logging
+    nixio.openlog("libremap-agent", "pid")
+
+    -- init uci cursor
+    local uci = luci_uci.cursor_state()
+
+    -- get section
+    local section = uci:get_first('libremap', 'libremap')
+
+    -- get api_urls
+    -- the api_urls are run in order until the submission succeeds
+    local api_urls = uci:get('libremap', section, 'api_url', 'http://libremap.net/api')
+    if type(api_urls)~='table' then
+        api_urls = { api_urls }
+    end
+
+    -- get id and rev (may be nil on first run)
+    local id = uci:get('libremap', section, 'id')
+    local rev = uci:get('libremap', section, 'rev')
+    local fetch_by_name = uci:get_bool('libremap', section, 'fetch_by_name')
+    local community = uci:get('libremap', section, 'community')
+
+    -- get plugins and their options
+    local plugins = {}
+    uci:foreach('libremap', 'plugin', function(sec)
+        local name = sec['.name']
+        if name and uci:get_bool('libremap', name, 'enabled') then
+            plugins[name] = sec
+        end
+    end)
+
+    -- submit to api_url
+    local success = false
+    for _, api_url in ipairs(api_urls) do
+        util.try(function()
+            -- get old document (if present)
+            if id then
+                old_doc = libremap.fetch(api_url, id)
+            elseif fetch_by_name == true and community ~= nil then
+                old_doc = libremap.fetch_by_name(api_url, community)
+            end
+            
+
+            -- gather data for new document
+            local new_doc = libremap.gather(plugins, id, rev, community, old_doc)
+
+            -- debug: print json
+            local json = require('luci.json')
+            print(json.encode(new_doc)
+)
+            -- submit new document
+            local new_id, new_rev = libremap.submit(api_url, new_doc)
+
+            -- success -> shout it out
+            nixio.syslog('info', 'success: submitted to '..api_url)
+            print('success: submitted to '..api_url)
+
+            -- store id and rev in uci
+            uci:set('libremap', section, 'id', new_id)
+            uci:set('libremap', section, 'rev', new_rev)
+
+            -- if the location data is not set in the config but the doc
+            -- was saved successfully, then location was retrieved from old_doc
+            -- so we save the location to config
+            if not tonumber(uci:get('libremap', 'location', 'latitude')) then
+                uci:set('libremap', 'location', 'latitude', new_doc.lat)
+            end
+            if not tonumber(uci:get('libremap', 'location', 'longitude')) then
+                uci:set('libremap', 'location', 'longitude', new_doc.lon)
+            end
+            -- doc is saved and config updated, so we disable fetch by name
+            if fetch_by_name then
+                uci:set('libremap', section, 'fetch_by_name', 0)
+            end
+
+            uci:save('libremap')
+            uci:commit('libremap')
+
+            success = true
+        end, function(e)
+            -- error -> log it!
+            nixio.syslog('err', 'submission to '..api_url..' failed')
+            nixio.syslog('err', e)
+            print('error: submission to '..api_url..' failed (see syslog)')
+        end)
+        if success then
+            break
+        end
+    end
+    -- tear down logging
+    nixio.closelog()
+end
+
+main()

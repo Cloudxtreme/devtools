@@ -1,0 +1,5 @@
+/etc/alfred/bat-hosts.lua
+/usr/sbin/alfred
+/etc/init.d/alfred
+/etc/config/alfred
+/usr/sbin/batadv-vis
